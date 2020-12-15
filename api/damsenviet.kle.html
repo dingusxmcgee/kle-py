@@ -1,0 +1,903 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>damsenviet.kle package &#8212; kle-py</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/style.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="canonical" href="/kle-py/api/damsenviet.kle.html" />
+    <link rel="shortcut icon" href="../_static/logo.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="damsenviet.kle.background module" href="damsenviet.kle.background.html" />
+    <link rel="prev" title="Documentation" href="../documentation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    <a class="navbar-brand" href="../index.html">
+    
+      <img src="../_static/logo-text.svg" class="logo" alt="logo" />
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../guide.html">Guide</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../documentation.html">Documentation</a>
+        </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="">API</a>
+        </li>
+        
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/DamSenViet/kle-py" target="_blank" rel="noopener">
+              <span><i class="fab fa-github-square"></i></span>
+            </a>
+          </li>
+        
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+    <div class="bd-toc-item active">
+    
+  
+    <ul class="nav bd-sidenav">
+        
+        
+        
+        
+        
+        
+          
+        
+        
+      </ul>
+  
+  </nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#submodules" class="nav-link">Submodules</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="module-damsenviet.kle">
+<span id="damsenviet-kle-package"></span><h1>damsenviet.kle package<a class="headerlink" href="#module-damsenviet.kle" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="damsenviet.kle.Keyboard">
+<em class="property">class </em><code class="sig-name descname">Keyboard</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">metadata</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">keys</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#damsenviet.kle.Keyboard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class storing Keyboard.</p>
+<dl class="py method">
+<dt id="damsenviet.kle.Keyboard.metadata">
+<em class="property">property </em><code class="sig-name descname">metadata</code><a class="headerlink" href="#damsenviet.kle.Keyboard.metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets metadata.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>metadata reference</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#damsenviet.kle.Metadata" title="damsenviet.kle.Metadata">Metadata</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Keyboard.keys">
+<em class="property">property </em><code class="sig-name descname">keys</code><a class="headerlink" href="#damsenviet.kle.Keyboard.keys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets key references.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of Key references</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[<a class="reference internal" href="#damsenviet.kle.Key" title="damsenviet.kle.Key">Key</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Keyboard.from_json">
+<em class="property">classmethod </em><code class="sig-name descname">from_json</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">keyboard_json</span></em>, <em class="sig-param"><span class="n">normalize</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#damsenviet.kle.Keyboard.from_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deserializes a KLE json array into a keyboard.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>keyboard_json</strong> (<em>List</em><em>[</em><em>Union</em><em>[</em><em>Dict</em><em>, </em><em>List</em><em>[</em><em>Union</em><em>[</em><em>str</em><em>, </em><em>Dict</em><em>]</em><em>]</em><em>]</em><em>]</em>) – the KLE formatted json</p></li>
+<li><p><strong>normalize</strong> (<em>bool</em>) – whether to normalize invalid values, silences errors when True</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference internal" href="#damsenviet.kle.DeserializeException" title="damsenviet.kle.DeserializeException"><strong>DeserializeException</strong></a> – keyboard_json is not an array</p></li>
+<li><p><a class="reference internal" href="#damsenviet.kle.DeserializeException" title="damsenviet.kle.DeserializeException"><strong>DeserializeException</strong></a> – rotation changes not at beginning of row</p></li>
+<li><p><a class="reference internal" href="#damsenviet.kle.DeserializeException" title="damsenviet.kle.DeserializeException"><strong>DeserializeException</strong></a> – metadata specified but not as first item</p></li>
+<li><p><a class="reference internal" href="#damsenviet.kle.DeserializeException" title="damsenviet.kle.DeserializeException"><strong>DeserializeException</strong></a> – item not expected type</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the Keyboard</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#damsenviet.kle.Keyboard" title="damsenviet.kle.Keyboard">Keyboard</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Keyboard.to_json">
+<code class="sig-name descname">to_json</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#damsenviet.kle.Keyboard.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Serializes the Keyboard to a KLE formatted json.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>keyboard</strong> (<a class="reference internal" href="#damsenviet.kle.Keyboard" title="damsenviet.kle.Keyboard"><em>Keyboard</em></a>) – the keyboard to deserialize</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the KLE formatted json</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Union[Dict, List[Union[str, Dict]]]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="damsenviet.kle.Metadata">
+<em class="property">class </em><code class="sig-name descname">Metadata</code><a class="headerlink" href="#damsenviet.kle.Metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class storing Keyboard’s Metadata.</p>
+<dl class="py method">
+<dt id="damsenviet.kle.Metadata.name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#damsenviet.kle.Metadata.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets name of the keyboard.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>name of the keyboard</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Metadata.author">
+<em class="property">property </em><code class="sig-name descname">author</code><a class="headerlink" href="#damsenviet.kle.Metadata.author" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets author name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>author name</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Metadata.notes">
+<em class="property">property </em><code class="sig-name descname">notes</code><a class="headerlink" href="#damsenviet.kle.Metadata.notes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets notes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>notes</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Metadata.background">
+<em class="property">property </em><code class="sig-name descname">background</code><a class="headerlink" href="#damsenviet.kle.Metadata.background" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets background of the keyboard.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>background of the keyboard</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#damsenviet.kle.Background" title="damsenviet.kle.Background">Background</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Metadata.background_color">
+<em class="property">property </em><code class="sig-name descname">background_color</code><a class="headerlink" href="#damsenviet.kle.Metadata.background_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets background color.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>background color</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Metadata.radii">
+<em class="property">property </em><code class="sig-name descname">radii</code><a class="headerlink" href="#damsenviet.kle.Metadata.radii" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets radius CSS component values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>radius CSS component values</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Metadata.css">
+<em class="property">property </em><code class="sig-name descname">css</code><a class="headerlink" href="#damsenviet.kle.Metadata.css" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets CSS stylesheet.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>CSS stylehseet</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Metadata.switch">
+<em class="property">property </em><code class="sig-name descname">switch</code><a class="headerlink" href="#damsenviet.kle.Metadata.switch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets switch.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>switch</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#damsenviet.kle.Switch" title="damsenviet.kle.Switch">Switch</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Metadata.is_switches_pcb_mounted">
+<em class="property">property </em><code class="sig-name descname">is_switches_pcb_mounted</code><a class="headerlink" href="#damsenviet.kle.Metadata.is_switches_pcb_mounted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets whether the switches are pcb mounted.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>whether switches are pcb mounted</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Metadata.include_switches_pcb_mounted">
+<em class="property">property </em><code class="sig-name descname">include_switches_pcb_mounted</code><a class="headerlink" href="#damsenviet.kle.Metadata.include_switches_pcb_mounted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets whether to force include switch pcb mounting in json.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>whether to force include switch pcb mounting in json</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Metadata.is_switches_plate_mounted">
+<em class="property">property </em><code class="sig-name descname">is_switches_plate_mounted</code><a class="headerlink" href="#damsenviet.kle.Metadata.is_switches_plate_mounted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets whether switches are plate mounted.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>whether switches are plate mounted</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Metadata.include_switches_plate_mounted">
+<em class="property">property </em><code class="sig-name descname">include_switches_plate_mounted</code><a class="headerlink" href="#damsenviet.kle.Metadata.include_switches_plate_mounted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether to force include switch plate mounting in json.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>whether to force include switch plate mounting in json</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="damsenviet.kle.Background">
+<em class="property">class </em><code class="sig-name descname">Background</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">style</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#damsenviet.kle.Background" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class storing Metadata’s Background.</p>
+<dl class="py method">
+<dt id="damsenviet.kle.Background.name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#damsenviet.kle.Background.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>name</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Background.style">
+<em class="property">property </em><code class="sig-name descname">style</code><a class="headerlink" href="#damsenviet.kle.Background.style" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets CSS style declaration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>CSS style declaration</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="damsenviet.kle.Key">
+<em class="property">class </em><code class="sig-name descname">Key</code><a class="headerlink" href="#damsenviet.kle.Key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class storing Key.</p>
+<dl class="py method">
+<dt id="damsenviet.kle.Key.color">
+<em class="property">property </em><code class="sig-name descname">color</code><a class="headerlink" href="#damsenviet.kle.Key.color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets cap css color.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>cap css color</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.labels">
+<em class="property">property </em><code class="sig-name descname">labels</code><a class="headerlink" href="#damsenviet.kle.Key.labels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the 12 labels.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>12 labels</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[<a class="reference internal" href="#damsenviet.kle.Label" title="damsenviet.kle.Label">Label</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.default_text_color">
+<em class="property">property </em><code class="sig-name descname">default_text_color</code><a class="headerlink" href="#damsenviet.kle.Key.default_text_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets default text color.</p>
+<p>Used to optimize the json size.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>default text color</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.default_text_size">
+<em class="property">property </em><code class="sig-name descname">default_text_size</code><a class="headerlink" href="#damsenviet.kle.Key.default_text_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets default text size</p>
+<p>Used to optimize the json size.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>default text size</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Union[int, float]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.x">
+<em class="property">property </em><code class="sig-name descname">x</code><a class="headerlink" href="#damsenviet.kle.Key.x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets x position of raised primary shape.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>x posiiton of raised primary shape</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>mpf</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.y">
+<em class="property">property </em><code class="sig-name descname">y</code><a class="headerlink" href="#damsenviet.kle.Key.y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets y position of raised primary shape in key units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>y position of raised primary shape in key units</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>mpf</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.width">
+<em class="property">property </em><code class="sig-name descname">width</code><a class="headerlink" href="#damsenviet.kle.Key.width" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets width of raised primary shape in key units .</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>width of raised primary shape in key units</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>mpf</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.height">
+<em class="property">property </em><code class="sig-name descname">height</code><a class="headerlink" href="#damsenviet.kle.Key.height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets height of raised primary shape in key units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>height of raised primary shape in key units</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>mpf</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.x2">
+<em class="property">property </em><code class="sig-name descname">x2</code><a class="headerlink" href="#damsenviet.kle.Key.x2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets x position offset of the lowered secondary shape in key units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>x position offset of the lowered secondary shape in key units</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>mpf</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.y2">
+<em class="property">property </em><code class="sig-name descname">y2</code><a class="headerlink" href="#damsenviet.kle.Key.y2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets y position offset of lowered secondary shape in key units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>y position offset of lowered secondary shape in key units</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>mpf</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.width2">
+<em class="property">property </em><code class="sig-name descname">width2</code><a class="headerlink" href="#damsenviet.kle.Key.width2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets width of lowered secondary shape in key units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>width of lowered secondary shape in key units</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>mpf</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.height2">
+<em class="property">property </em><code class="sig-name descname">height2</code><a class="headerlink" href="#damsenviet.kle.Key.height2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets height of lowered secondary shape in key units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>height of lowered secondary shape in key units</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>mpf</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.rotation_x">
+<em class="property">property </em><code class="sig-name descname">rotation_x</code><a class="headerlink" href="#damsenviet.kle.Key.rotation_x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets x position of rotation origin in key units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>x position of rotation origin in key units</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>mpf</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.rotation_y">
+<em class="property">property </em><code class="sig-name descname">rotation_y</code><a class="headerlink" href="#damsenviet.kle.Key.rotation_y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets y position of rotation origin in key units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>y position of rotation origin in key units</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>mpf</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.rotation_angle">
+<em class="property">property </em><code class="sig-name descname">rotation_angle</code><a class="headerlink" href="#damsenviet.kle.Key.rotation_angle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets rotation angle in degrees.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>rotation angle in degrees</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>mpf</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.is_ghosted">
+<em class="property">property </em><code class="sig-name descname">is_ghosted</code><a class="headerlink" href="#damsenviet.kle.Key.is_ghosted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets whether the key is rendered partially transparent.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>whether the key is rendered partially transparent</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.is_stepped">
+<em class="property">property </em><code class="sig-name descname">is_stepped</code><a class="headerlink" href="#damsenviet.kle.Key.is_stepped" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets whether the key is stepped.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>whether the key is stepped</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.is_homing">
+<em class="property">property </em><code class="sig-name descname">is_homing</code><a class="headerlink" href="#damsenviet.kle.Key.is_homing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets whether the key is a homing key.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>whether the key is a homing key</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.is_decal">
+<em class="property">property </em><code class="sig-name descname">is_decal</code><a class="headerlink" href="#damsenviet.kle.Key.is_decal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets whether the key is purely decorative.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>whether the key is purely decorative</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.profile_and_row">
+<em class="property">property </em><code class="sig-name descname">profile_and_row</code><a class="headerlink" href="#damsenviet.kle.Key.profile_and_row" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets keycap profile and row.</p>
+<p>e.g. “DCS R1”</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>keycap profile and row</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Key.switch">
+<em class="property">property </em><code class="sig-name descname">switch</code><a class="headerlink" href="#damsenviet.kle.Key.switch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets switch.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>switch</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#damsenviet.kle.Switch" title="damsenviet.kle.Switch">Switch</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="damsenviet.kle.Switch">
+<em class="property">class </em><code class="sig-name descname">Switch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mount</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">brand</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">type</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#damsenviet.kle.Switch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class storing incremental Switch.</p>
+<dl class="py method">
+<dt id="damsenviet.kle.Switch.mount">
+<em class="property">property </em><code class="sig-name descname">mount</code><a class="headerlink" href="#damsenviet.kle.Switch.mount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets switch mount.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>switch mount</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Switch.brand">
+<em class="property">property </em><code class="sig-name descname">brand</code><a class="headerlink" href="#damsenviet.kle.Switch.brand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets switch brand.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>switch brand</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Switch.type">
+<em class="property">property </em><code class="sig-name descname">type</code><a class="headerlink" href="#damsenviet.kle.Switch.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets switch type part id.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>switch type part id</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="damsenviet.kle.Label">
+<em class="property">class </em><code class="sig-name descname">Label</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">'#000000'</span></em>, <em class="sig-param"><span class="n">size</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#damsenviet.kle.Label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class storing Key’s Label.</p>
+<dl class="py method">
+<dt id="damsenviet.kle.Label.text">
+<em class="property">property </em><code class="sig-name descname">text</code><a class="headerlink" href="#damsenviet.kle.Label.text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets text content.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>text content</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Label.color">
+<em class="property">property </em><code class="sig-name descname">color</code><a class="headerlink" href="#damsenviet.kle.Label.color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets css font color.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>css font color</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="damsenviet.kle.Label.size">
+<em class="property">property </em><code class="sig-name descname">size</code><a class="headerlink" href="#damsenviet.kle.Label.size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets font size scale.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>font size scale</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Union[int, float]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt id="damsenviet.kle.DeserializeException">
+<em class="property">exception </em><code class="sig-name descname">DeserializeException</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="n">payload</span></em><span class="sig-paren">)</span><a class="headerlink" href="#damsenviet.kle.DeserializeException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Exceptions encountered during deserialization.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>message</strong> (<em>str</em>) – </p></li>
+<li><p><strong>payload</strong> (<em>Union</em><em>[</em><em>int</em><em>, </em><em>float</em><em>, </em><em>str</em><em>, </em><em>None</em><em>, </em><em>Dict</em><em>, </em><em>List</em><em>]</em>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="damsenviet.kle.background.html">damsenviet.kle.background module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="damsenviet.kle.exceptions.html">damsenviet.kle.exceptions module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="damsenviet.kle.key.html">damsenviet.kle.key module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="damsenviet.kle.keyboard.html">damsenviet.kle.keyboard module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="damsenviet.kle.label.html">damsenviet.kle.label module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="damsenviet.kle.metadata.html">damsenviet.kle.metadata module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="damsenviet.kle.switch.html">damsenviet.kle.switch module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="damsenviet.kle.utils.html">damsenviet.kle.utils module</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2020, damsenviet.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.3.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
